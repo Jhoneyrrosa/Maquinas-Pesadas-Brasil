@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
@@ -59,3 +60,7 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+=======
+# Maquinas-Pesadas-Brasil
+Um projeto web simples desenvolvido com o framework Laravel. Criado com o objetivo de praticar conceitos básicos de front-end (HTML, CSS) e back-end (rotas, controladores, validação de formulários). Inclui uma página inicial e um formulário de contato funcional.
+>>>>>>> b69be98240a9644daf35ea09535b312abfe78f06
