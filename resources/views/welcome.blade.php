@@ -40,7 +40,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: #a2a2a2;
     text-shadow: 2px 2px 4px #000000;
     text-align: center;
 }
