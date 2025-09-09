@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Máquinas Brasil</title>
+    <title>Máquinas Pesadas Brasil</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -17,7 +17,6 @@
         .navbar {
             background-color: #34495e;
             padding: 10px 20px;
-            text-align: center;
             position: fixed;
             top: 0;
             left: 0;
@@ -27,41 +26,54 @@
             justify-content: space-between;
             align-items: center;
         }
+        .navbar__left {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
         .navbar__logo {
             display: flex;
             align-items: center;
             text-decoration: none;
-            color: white;
-            font-weight: bold;
-            font-size: 1.1em;
         }
-        .navbar__logo img {
-            height: 170px;
-            margin-right: 10px;
+        .logo-img {
+            background: green;
+            width: 100px;
+            margin: 0 0 0 25px;
+            padding: 5px;
+            border-radius: 100px;
+        }
+        .navbar__title {
+            color: white;
+            font-size: 2.0em;
+            margin: 0 auto;
+             font-weight: bold;
+            font-size: 4.1em;
+            align-items: center;
         }
         .navbar__links a {
             color: white;
             text-decoration: none;
             margin-left: 15px;
+            margin-top: 80px;
             font-weight: bold;
             font-size: 1.1em;
         }
-        
+        .navbar__links a:hover {
+            text-decoration: underline;
+        }
+
         /* --- Estilo do Header --- */
         .header {
             background-color: #FF2800;
             color: white;
-            padding: 40px;
+            padding: 10px;
             text-align: center;
-            margin-top: 50px; /* Adicionado para compensar o menu fixo */
+            margin-top: 130px; /* Mantido o ajuste de margem para compensar o menu */
         }
-        .header__title-page {
-            margin: 10px 0 10px;
-            font-size: 3.5em;
-        }
-        .header__descricao-page {
+        .header__description-page {
+            font-size: 2.0em;
             margin: 0;
-            font-size: 1.2em;
         }
 
         /* --- Estilo do Hero --- */
@@ -134,7 +146,7 @@
         /* --- Estilo da Mensagem de Sucesso --- */
         .success-message {
             position: fixed;
-            top: 50px; /* Ajustado para ficar abaixo do menu fixo */
+            top: 50px;
             left: 0;
             right: 0;
             z-index: 1000;
@@ -149,16 +161,16 @@
 </head>
 <body>
 
-    <nav class="navbar">
+   <nav class="navbar">
         <a href="/" class="navbar__logo">
-            <p align="center">
-<p align="center">
-<img class="logo-img" src="{{ asset('images/logo.png') }}" alt="Sua Logo">
-            <span>Novo conceito em Máquinas</span>
+            <img class="logo-img" src="{{ asset('images/logo.png') }}" alt="Sua Logo">
         </a>
+        <h1 class="navbar__title">Máquinas Pesadas Brasil</h1>
         <div class="navbar__links">
             <a href="/">Início</a>
+            <a href="/produto">Produto</a>
             <a href="/contato">Contato</a>
+            <a href="/sobre-nos">Sobre Nós</a>
         </div>
     </nav>
 
@@ -169,8 +181,7 @@
     @endif
 
     <header class="header">
-        <h1 class="header__title-page">Máquinas Pesadas Brasil</h1>
-        <p class="header__descricao-page">Especializada em Máquinas modernas da China</p>
+        <span class="header__description-page">Especializada em modernas e pesadas Máquinas da China</span>
     </header>
 
     <div class="hero">
@@ -196,7 +207,7 @@
                     <p>Potência e precisão para terraplenagem.</p>
                 </div>
                 <div class="card">
-                    <img src="https://p.globalsources.com/IMAGES/PDT/B1177860004/Caminhao-basculante.jpg?ver=5161061725" alt="Caminhão Basculante">
+                    <img src="https://p.globalsources.com/IMAGES/PDT/B1177860004/Caminhao-basculante.jpg?ver=5161061725" alt="Caminhao Basculante">
                     <h3>Caminhão Basculante</h3>
                     <p>Robustez para o transporte de materiais.</p>
                 </div>
